@@ -182,7 +182,7 @@
             
         </h1>
         <div class="content">
-            <p>‘누구나 쉽게 다가갈 수 있는 딥러닝’을 추구하며 혜성처럼 등장한 딥러닝 라이브러리 fast.ai. 이 포스트는 fast.ai에서 제공하는 <a href="https://course.fast.ai/videos/" target="_blank" rel="noopener"><strong>Practical Deep Learning for Coders, v3 강좌</strong></a>를 듣기 위해 필요한 준비를 설명한 후, 강의 내용을 꼼꼼히 정리하는 시리즈가 될 예정입니다. </p>
+            <p>‘누구나 쉽게 다가갈 수 있는 딥러닝’을 추구하며 혜성처럼 등장한 딥러닝 라이브러리 fast.ai. 이 포스트는 fast.ai에서 제공하는 <span style="color:blue"><a href="https://course.fast.ai/videos/" target="_blank" rel="noopener"><strong>Practical Deep Learning for Coders, v3 강좌</strong></a></span>를 듣기 위해 필요한 준비를 설명한 후, 강의 내용을 꼼꼼히 정리하는 시리즈가 될 예정입니다. </p>
 <h2 id="GPU-사용하기"><a href="#GPU-사용하기" class="headerlink" title="GPU 사용하기"></a>GPU 사용하기</h2><p>딥러닝 모델을 돌리기 위해서는 CPU뿐만 아니라 좋은 GPU가 필수적입니다. 특히 Tensorflow, Pytorch, fast.ai와 같은 파이썬의 유명 딥러닝 라이브러리들은 모두 NVIDIA사의 GPU를 필요로 합니다. 물론 이미 좋은 NVIDIA사의 그래픽카드를 갖고 계신 분들도 있겠지만, fast.ai에서는 그래픽카드가 있어도 클라우드 서버의 GPU를 사용할 것을 권장합니다. 주피터 노트북과 CUDA를 설치하는 데에 시간이 많이 걸릴 뿐만 아니라, 과정이 복잡하기 때문이죠. 그래서 우선 필요한 모든 것들이 이미 설치되어 있는 클라우드 컴퓨터를 빌린 후, 모든 에너지를 딥러닝 학습에  쏟아붓는 것을 추천하는 것입니다.</p>
 <p><a href="https://course.fast.ai/index.html" target="_blank" rel="noopener">fast.ai 강좌 홈페이지</a>에서는 이러한 클라우드 서비스를 여럿 소개하고 있습니다. 딥러닝 모델을 돌려보셨던 분들이라면 한번 쯤 써 보셨을 구글 Colab도 이 중 하나죠. 구글 Colab은 무료이지만, 세션에 따라 그래픽카드인 K80이 제 성능을 내지 못한다는 이야기가 많아 제외하도록 하겠습니다. 홈페이지를 보면 Crestle, Kaggle Kernels, Salamander, Google Compute Paltform, Azure, AWS… 수많은 선택지들이 있는데, 그 중 저는 <strong>GCP(Google Compute Platform)</strong>을 선택했습니다.</p>
 <h2 id="왜-GCP인가"><a href="#왜-GCP인가" class="headerlink" title="왜 GCP인가?"></a>왜 GCP인가?</h2><p>Google Compute Platform은 물론 커맨드 라인을 입력해 설치해야 하는 번거로움은 있지만, 다른 유료 서비스에 비해 다음과 같은 장점이 있습니다.</p>
@@ -240,7 +240,7 @@
 <p>이후, 다음과 같은 명령어를 입력해서 fastai 라이브러리를 최신 업데이트 해주세요.</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /opt/anaconda3/bin/conda install -c fastai fastai</span><br></pre></td></tr></table></figure>
 <p>완료가 되면 주피터 노트북을 새로고침하세요. course-v3이라는 폴더가 생긴 것을 확인할 수 있습니다.</p>
-<h2 id="6-주의-인스턴스-정지"><a href="#6-주의-인스턴스-정지" class="headerlink" title="6. [주의!] 인스턴스 정지"></a>6. [주의!] 인스턴스 정지</h2><p><strong>자리를 비우는 등 주피터 노트북을 사용하지 않는다면, 반드시 인스턴스를 정지하세요!!!!!</strong></p>
+<h2 id="6-주의-인스턴스-정지"><a href="#6-주의-인스턴스-정지" class="headerlink" title="6. [주의!] 인스턴스 정지"></a>6. [주의!] 인스턴스 정지</h2><p><span style="color:red"><strong>자리를 비우는 등 주피터 노트북을 사용하지 않는다면, 반드시 인스턴스를 정지하세요!!!!!</strong></span></p>
 <p>딥러닝 모델을 돌리고 있지 않는 ‘idle’상태여도 실행되고 있는 인스턴스에 대한 가격은 청구됩니다. 인스턴스를 정지하는 것을 잊어버린다면 엄청난 요금 폭탄이 청구되니, 항상 쓰지 않을 때마다 <a href="https://console.cloud.google.com/compute" target="_blank" rel="noopener">콘솔 페이지</a>에서 정지 버튼을 눌러 인스턴스를 정지하세요.</p>
 <p>다음 글에서는 fast.ai 강좌를 한국어로 요약한 내용을 연재할 예정입니다.</p>
 
