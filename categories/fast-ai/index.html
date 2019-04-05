@@ -2,22 +2,21 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>travel - 코라의 삶</title>
+<title>Category: fast-ai - 코라의 삶</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="여행 일기를 저장합니다.대만 여행">
+    <meta name="description" content="Korra&apos;s blog using Hexo">
 <meta property="og:type" content="website">
-<meta property="og:title" content="travel">
-<meta property="og:url" content="https://korra0501.github.io/travel/index.html">
+<meta property="og:title" content="코라의 삶">
+<meta property="og:url" content="https://korra0501.github.io/categories/fast-ai/index.html">
 <meta property="og:site_name" content="코라의 삶">
-<meta property="og:description" content="여행 일기를 저장합니다.대만 여행">
+<meta property="og:description" content="Korra&apos;s blog using Hexo">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-21T07:30:21.314Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="travel">
-<meta name="twitter:description" content="여행 일기를 저장합니다.대만 여행">
+<meta name="twitter:title" content="코라의 삶">
+<meta name="twitter:description" content="Korra&apos;s blog using Hexo">
 
 
 
@@ -89,7 +88,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="travel" height="28">
+                <img src="/images/logo.png" alt="코라의 삶" height="28">
             
             </a>
         </div>
@@ -105,7 +104,7 @@
                 
                 <a class="navbar-item" href="/categories">Categories</a>
                 
-                <a class="navbar-item is-active" href="/travel">Travel</a>
+                <a class="navbar-item" href="/travel">Travel</a>
                 
                 <a class="navbar-item" href="/tags">Tags</a>
                 
@@ -137,16 +136,113 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/categories">Categories</a></li>
+            
+            <li class="is-active"><a href="#" aria-current="page">fast-ai</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/2019/04/03/fast-ai입문/" class="image is-7by1">
+            <img class="thumbnail" src="/images/fast-ai/google-cloud-platform.png" alt="Google Cloud Platform으로 fast.ai 입문하기">
+        </a>
+    </div>
     
     <div class="card-content article ">
         
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-03T11:43:20.000Z">2019-04-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/fast-ai/">fast-ai</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    17 minutes read (About 2498 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                travel
+                <a class="has-link-black-ter" href="/2019/04/03/fast-ai입문/">Google Cloud Platform으로 fast.ai 입문하기</a>
             
         </h1>
         <div class="content">
-            <h2 id="여행-일기를-저장합니다"><a href="#여행-일기를-저장합니다" class="headerlink" title="여행 일기를 저장합니다."></a>여행 일기를 저장합니다.</h2><p>대만 여행</p>
+            <p>‘누구나 쉽게 다가갈 수 있는 딥러닝’을 추구하며 혜성처럼 등장한 딥러닝 라이브러리 fast.ai. 이 포스트는 fast.ai에서 제공하는 <a href="https://course.fast.ai/videos/" target="_blank" rel="noopener"><strong>Practical Deep Learning for Coders, v3 강좌</strong></a>를 듣기 위해 필요한 준비를 설명한 후, 강의 내용을 꼼꼼히 정리하는 시리즈가 될 예정입니다. </p>
+<h2 id="GPU-사용하기"><a href="#GPU-사용하기" class="headerlink" title="GPU 사용하기"></a>GPU 사용하기</h2><p>딥러닝 모델을 돌리기 위해서는 CPU뿐만 아니라 좋은 GPU가 필수적입니다. 특히 Tensorflow, Pytorch, fast.ai와 같은 파이썬의 유명 딥러닝 라이브러리들은 모두 NVIDIA사의 GPU를 필요로 합니다. 물론 이미 좋은 NVIDIA사의 그래픽카드를 갖고 계신 분들도 있겠지만, fast.ai에서는 그래픽카드가 있어도 클라우드 서버의 GPU를 사용할 것을 권장합니다. 주피터 노트북과 CUDA를 설치하는 데에 시간이 많이 걸릴 뿐만 아니라, 과정이 복잡하기 때문이죠. 그래서 우선 필요한 모든 것들이 이미 설치되어 있는 클라우드 컴퓨터를 빌린 후, 모든 에너지를 딥러닝 학습에  쏟아붓는 것을 추천하는 것입니다.</p>
+<p><a href="https://course.fast.ai/index.html" target="_blank" rel="noopener">fast.ai 강좌 홈페이지</a>에서는 이러한 클라우드 서비스를 여럿 소개하고 있습니다. 딥러닝 모델을 돌려보셨던 분들이라면 한번 쯤 써 보셨을 구글 Colab도 이 중 하나죠. 구글 Colab은 무료이지만, 세션에 따라 그래픽카드인 K80이 제 성능을 내지 못한다는 이야기가 많아 제외하도록 하겠습니다. 홈페이지를 보면 Crestle, Kaggle Kernels, Salamander, Google Compute Paltform, Azure, AWS… 수많은 선택지들이 있는데, 그 중 저는 <strong>GCP(Google Compute Platform)</strong>을 선택했습니다.</p>
+<h2 id="왜-GCP인가"><a href="#왜-GCP인가" class="headerlink" title="왜 GCP인가?"></a>왜 GCP인가?</h2><p>Google Compute Platform은 물론 커맨드 라인을 입력해 설치해야 하는 번거로움은 있지만, 다른 유료 서비스에 비해 다음과 같은 장점이 있습니다.</p>
+<ul>
+<li>300달러의 무료 크레딧을 준다! fast.ai 강좌를 듣고 프로젝트를 해도 크레딧으로 충분히 사용할 수 있다.</li>
+<li>모든 것이 미리 설치되어 있어 기본적인 커맨드 라인만 입력하면 어느 컴퓨터에서도 사용할 수 있다.</li>
+<li>Colab의 K80 GPU에 비해 훨씬 빠른 P4 GPU로 traning time을 줄일 수 있다.</li>
+</ul>
+<p>네, 사실 첫번째 장점이 제일 큽니다.</p>
+<h4 id="GCP의-가격"><a href="#GCP의-가격" class="headerlink" title="GCP의 가격"></a>GCP의 가격</h4><p>GCP는 CPU와 GPU 따로 가격을 합산하여 청구합니다. Standard Compute(P4 GPU)와 Budget Compute(K80 GPU)라는 두 가지 옵션이 제공되는데, 전자의 경우는 <strong>1시간마다 $0.38</strong>, 후자는 <strong>1시간마다 $0.23</strong>입니다. 거기에 기본 옵션인 200GB 스토리지를 사용하려면 <strong>달마다 $9.60을 추가로 내야 합니다</strong>. </p>
+<p>하지만 다행히도 <strong>fast.ai 공부를 위해 GCP를 200시간정도 사용하더라도 청구되는 요금은 Standard Compute 기준 약 $100으로, GCP 크레딧($300)의 1/3밖에 들지 않습니다</strong>. 따라서 fast.ai에서는 Standard Compute 플랜으로 돈 아끼지 말고 공부할 것을 추천합니다. </p>
+<h2 id="1-계정-생성"><a href="#1-계정-생성" class="headerlink" title="1. 계정 생성"></a>1. 계정 생성</h2><p><a href="https://cloud.google.com/" target="_blank" rel="noopener">구글 클라우드 홈페이지</a>에서 계정을 만듭니다. 계정을 생성하면 300달러어치의 크레딧을 제공합니다.</p>
+<h2 id="2-GCP-설치"><a href="#2-GCP-설치" class="headerlink" title="2. GCP 설치"></a>2. GCP 설치</h2><p><a href>fast.ai GCP 설치 페이지</a>에서는 윈도우에서 우분투 터미널을 사용해 설치할 것을 권하고 있지만, <strong>추천하지 않습니다</strong>. <a href="https://cloud.google.com/sdk/docs/quickstarts" target="_blank" rel="noopener">GCP 공식 홈페이지</a>에서는 다양한 운영체제에 대한 설치법을 안내하고 있으니, 윈도우 이외의 OS를 쓰시는 분들께서는 이 문서를 참조하셔서 설치하세요. 이 단락은 윈도우에서 설치하는 방법을 안내합니다.</p>
+<ol>
+<li><a href="https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe" target="_blank" rel="noopener">구글 클라우드 SDK</a>을 내려받아 설치</li>
+<li>설치가 끝나면 다음과 같이 체크 항목이 뜨는데, 모두 체크해주세요.</li>
+</ol>
+<p><img src="/images/fast-ai/windows-installer-prompt.png" alt="윈도우 설치 창"></p>
+<ol start="3">
+<li>바탕화면의 Google Cloud SDK Shell을 클릭, 터미널에 진입합니다.</li>
+</ol>
+<h2 id="3-GCP-초기화"><a href="#3-GCP-초기화" class="headerlink" title="3. GCP 초기화"></a>3. GCP 초기화</h2><p>터미널에서 다음 문구를 입력하여 GCP SDK를 초기화합니다.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcloud init</span><br></pre></td></tr></table></figure>
+<p>입력했다면 아래의 메세지가 뜹니다.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">To continue, you must log in. Would you like to log in (Y/n)?</span><br></pre></td></tr></table></figure>
+<p>y를 눌러 브라우저를 통해 구글 아이디로 로그인합니다. 만약 기존에 GCP에서 프로젝트를 만든 적이 있다면, 다음과 같이 기존 프로젝트 중에서 하나를 선택하라는 메세지가 나타납니다. 프로젝트가 하나밖에 없다면 <em>gcloud init</em> 이 자동적으로 해당 프로젝트를 선택합니다. </p>
+<figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Pick cloud project to use:</span><br><span class="line"> [1] [my-project-1]</span><br><span class="line"> [2] [my-project-2]</span><br><span class="line"> ...</span><br><span class="line"> Please enter your numeric choice:</span><br></pre></td></tr></table></figure>
+<p>번호를 입력하여 프로젝트를 선택합니다. 물론 여기서 새로운 프로젝트를 생성할 수도 있습니다. 마지막으로 Compute Engine 지역을 정하는 메세지가 나타납니다.<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Which compute zone would you like to use as project default?</span><br><span class="line"> [1] [asia-east1-a]</span><br><span class="line"> [2] [asia-east1-b]</span><br><span class="line"> ...</span><br><span class="line"> [14] Do not use default zone</span><br><span class="line"> Please enter your numeric choice:</span><br></pre></td></tr></table></figure></p>
+<p>적당히 정하면 되는데, 저는 <strong>us-west1-b</strong>를 선택했습니다. 성공적으로 지금까지 따라오셨다면, 터미널에 다음과 같은 메세지가 보일 것입니다.<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Your Google Cloud SDK is configured and ready to use!</span><br><span class="line"></span><br><span class="line">* Commands that require authentication will use your.email@gmail.com by default</span><br><span class="line">* Commands will reference project `my-project-1` by default</span><br><span class="line">Run `gcloud help config` to learn how to change individual settings</span><br><span class="line"></span><br><span class="line">This gcloud configuration is called [default].</span><br></pre></td></tr></table></figure></p>
+<h2 id="4-인스턴스-생성"><a href="#4-인스턴스-생성" class="headerlink" title="4. 인스턴스 생성"></a>4. 인스턴스 생성</h2><p>터미널에 다음과 같이 입력합니다. 만약 Standard Compute가 아닌 Budget Compute 플랜을 사용하고 싶다면, “n1-highmem-8” 대신 “n1-highmem-4”를, “type=nvidia-tesla-p4,count=1” 대신 “type=nvidia-tesla=k80,count=1”을 입력합니다.</p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcloud compute instances create "my-fastai-instance" --zone="us-west2-b" --image-family="pytorch-latest-gpu" --image-project=deeplearning-platform-release --maintenance-policy=TERMINATE --accelerator="type=nvidia-tesla-p4,count=1" --machine-type="n1-highmem-8" --boot-disk-size=200GB --metadata="install-nvidia-driver=True" --preemptible</span><br></pre></td></tr></table></figure>
+<p>여기서 만약 다음과 같은 에러가 뜬다면, GPU 할당량을 변경해야 합니다.</p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR: (gcloud.compute.instances.create) Could not fetch resource:</span><br><span class="line"> - Quota 'GPUS_ALL_REGIONS' exceeded. Limit: 0.0 globally.</span><br></pre></td></tr></table></figure>
+<ol>
+<li><a href="https://console.cloud.google.com/iam-admin/quotas" target="_blank" rel="noopener">구글 클라우드 할당량 페이지</a>로 갑니다.</li>
+<li>무료 계정이라면, 유료 계정으로 업그레이드해야 합니다. 걱정하지 마세요! 300달러의 크레딧이 사라지거나 하지는 않으니까요.</li>
+<li>필터에서 Compute Engine, GPUs(all regions)를 선택합니다.</li>
+</ol>
+<p><img src="/images/fast-ai/quota.jpg" alt="필터 선택 방법 - 저는 할당량 조정 완료 상태라서 1로 뜹니다"></p>
+<ol>
+<li><p>my-fastai-instance의 할당량을 클릭하여 <strong>0에서 1로 조정</strong>합니다. 변경 목적을 물어보는 란에는 영어로 적당히 입력합니다.</p>
+</li>
+<li><p>2영업일 걸린다고 하는데, 친절한 구글 담당자가 20분 안에 승인해줍니다.</p>
+</li>
+<li><a href="https://console.cloud.google.com/compute" target="_blank" rel="noopener">콘솔 페이지</a>에서 인스턴스가 제대로 생성되었는지 확인하세요. 인스턴스 이름 왼쪽 아이콘이 회색이면 꺼진 상태, 녹색이면 켜진 상태입니다.</li>
+<li>모두 정상적으로 진행되었다면, 터미널에서 다음과 같이 입력하여 인스턴스에 연결합니다. <strong>이 명령어는 인스턴스를 실행할 때마다 써야하니 메모장에 복사해 두세요!!</strong></li>
+</ol>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcloud compute ssh --zone="us-west2-b" jupyter@"my-fastai-instance" -- -L 8080:localhost:8080</span><br></pre></td></tr></table></figure>
+<p>SSH 키를 생성한다는 문구가 나올텐데, ‘예’를 누르고 넘어갑니다. 지금까지 아무런 문제가 없었다면, 브라우저 주소창에 <a href="localhost:8080/tree" target="_blank" rel="noopener"><strong>localhost:8080/tree</strong></a>를 입력해보세요. 익숙한 jupyter notebook 환경이 등장합니다. 축하해요!</p>
+<p>여기서 <strong>localhost:8080이 아닌, localhost:8080/tree를 입력해야 </strong>하는 이유는, tree를 입력하지 않을 경우 JupyterLab이라는 프로그램으로 연결되기 때문입니다. 평소에 localhost:8080으로 컴퓨터의 주피터 노트북을 사용하셨던 분들은 주의하세요.</p>
+<h2 id="5-fast-ai-자료-다운로드-및-업데이트"><a href="#5-fast-ai-자료-다운로드-및-업데이트" class="headerlink" title="5. fast.ai 자료 다운로드 및 업데이트"></a>5. fast.ai 자료 다운로드 및 업데이트</h2><p>윈도우에서 진행하셨던 분들은, 저번 단계가 완료되면 Putty란 프로그램이 같이 실행될 겁니다.</p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter@my-fastai-instance:</span><br></pre></td></tr></table></figure>
+<p> Putty의 CLI실행창에는 위와 같은 문구가 있을텐데, 다음 명령어를 입력해 주세요. 깃허브의 fast.ai 라이브러리를 가져와서 실습할 준비를 하기 위해서입니다.</p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd tutorials/fastai/course-v3</span><br><span class="line">git checkout .</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<p>이후, 다음과 같은 명령어를 입력해서 fastai 라이브러리를 최신 업데이트 해주세요.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /opt/anaconda3/bin/conda install -c fastai fastai</span><br></pre></td></tr></table></figure>
+<p>완료가 되면 주피터 노트북을 새로고침하세요. course-v3이라는 폴더가 생긴 것을 확인할 수 있습니다.</p>
+<h2 id="6-주의-인스턴스-정지"><a href="#6-주의-인스턴스-정지" class="headerlink" title="6. [주의!] 인스턴스 정지"></a>6. [주의!] 인스턴스 정지</h2><p><strong>자리를 비우는 등 주피터 노트북을 사용하지 않는다면, 반드시 인스턴스를 정지하세요!!!!!</strong></p>
+<p>딥러닝 모델을 돌리고 있지 않는 ‘idle’상태여도 실행되고 있는 인스턴스에 대한 가격은 청구됩니다. 인스턴스를 정지하는 것을 잊어버린다면 엄청난 요금 폭탄이 청구되니, 항상 쓰지 않을 때마다 <a href="https://console.cloud.google.com/compute" target="_blank" rel="noopener">콘솔 페이지</a>에서 정지 버튼을 눌러 인스턴스를 정지하세요.</p>
+<p>다음 글에서는 fast.ai 강좌를 한국어로 요약한 내용을 연재할 예정입니다.</p>
 
         </div>
         
@@ -161,29 +257,7 @@
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
-        
-<script>
-    var disqus_config = function () {
-        this.page.url = 'https://korra0501.github.io/travel/index.html';
-        this.page.identifier = 'travel/index.html';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'korra-yume' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
 
-<div id="disqus_thread">
-    
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-    </div>
-</div>
 </div>
                 
 
@@ -610,7 +684,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="travel" height="28">
+                    <img src="/images/logo.png" alt="코라의 삶" height="28">
                 
                 </a>
                 <p class="is-size-7">
